@@ -1,4 +1,4 @@
-const c1=```
+const c1=`
 PanoramicaTestoVideoAscoltaAltre registrazioni
 Seguir con gli occhi un airone sopra il fiume e poi
 Ritrovarsi a volare
@@ -29,4 +29,4 @@ Ma nella mente tua non c'è
 Capire tu non puoi
 Tu chiamale se vuoi emozioni
 Tu chiamale se vuoi emozioni
-```;
+`;
