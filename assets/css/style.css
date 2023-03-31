@@ -70,6 +70,12 @@
   --transition-2: 0.5s ease;
   --transition-3: 0.3s ease-in-out;
 
+  /**
+  * star rating
+  */
+  --star-size: 20px;
+  --star-color: lightgray;
+  --star-background: #FFA41C;
 }
 
 
@@ -927,4 +933,29 @@ textarea.input-field {
     padding-right: 10px;
     max-width: 400px;
     width: 100%;
+}
+
+/**
+* STAR RATING
+*/
+
+.book-rating {
+  font-size: 15px
+}
+
+.star-rating {
+  --percent: calc(var(--rating) / 5 * 100%);
+  display: inline-block;
+  font-size: var(--star-size);
+  font-family: Times; 
+  font-weight: bold;
+  line-height: 1;
+}
+
+.star-rating::before {
+  content: '★★★★★';
+  letter-spacing: 0;
+  background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
